@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" x-data="alertsComponent()" x-init="init()" x-cloak>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alerts</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Alpine.js -->
+ 
+  <!-- Custom JS -->
+  <!-- <script src="./app.js" ></script> -->
+  
+	
+  <script type="module" crossorigin src="/assets/index-6c0afec4.js"></script>
+  <link rel="stylesheet" href="/assets/index-343639b8.css">
+</head>
+<body class=" text-white min-h-screen flex items-center justify-center">
+
+	
+	 <!-- Alert Box -->
+  <div
+    id="alerts"
+    x-show="visible"
+    x-transition:enter="transition ease-out duration-300"
+    x-transition:enter-start="opacity-0 -translate-y-8 scale-95"
+    x-transition:enter-end="opacity-100 translate-y-0 scale-100"
+    x-transition:leave="transition ease-in duration-300"
+    x-transition:leave-start="opacity-100 translate-y-0 scale-100"
+    x-transition:leave-end="opacity-0 -translate-y-6 scale-95"
+    x-cloak
+    class="fixed top-6 left-1/2 bg-zinc-800 transform -translate-x-1/2 w-[90%] max-w-md p-5 rounded-2xl shadow-2xl glass border border-zinc-600"
+  >
+    <div class="flex flex-col space-y-2 items-center text-center">
+      <h2 class="text-xl font-bold text-white tracking-wide" x-text="alert?.title"></h2>
+      <p class="text-sm text-zinc-300" x-text="alert?.message"></p>
+    </div>
+  </div>
+
+
+</body>
+</html>
