@@ -1,4 +1,4 @@
-# Simple Announcment script for QBCore and ox_lib
+# Simple Announcment script for QBCore, ESX and ox_lib
 
 
 # Preview
@@ -14,4 +14,15 @@
 # Depedencies 
 
 * ox_lib
-* QBCore
+
+
+
+
+## 📦 Release Notes
+
+### 2.0.0
+- Added support for ESX 
+- Made redesign for UI
+
+
+
