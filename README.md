@@ -1,3 +1,5 @@
+# New updates are available under [NoCapScripts-FiveM](https://github.com/NoCapScripts-FiveM)
+
 # Simple Announcment script for QBCore, ESX and ox_lib
 
 
